@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Especialidades-MedPlus</title>
+  <link href="especialidades.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--Header-->
+  <header>
+    <div class="header">
+      <div class="topico">
+        <img src="images/logoespee.png" height="40%" width="300px" button id="botlogo" onclick="voltar()">
+        <img src="images/iconesaida.png" height="80px" width="80px" id="foto2" button id="botlogo" onclick="voltar()">
+        <img src="images/iconelogin.png" height="80px" width="80px" id="foto3" button id="botlogo" onclick="login()">
+
+      </div>
+    </div>
+  </header>
+  <!--Fim header-->
+
+  <!--carrossel-->
+  <div class="slider">
+    <div class="slides">
+
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+
+      <div class="slide first">
+        <img src="images/especialidades.png" alt="Imagem 1">
+      </div>
+      <div class="slide">
+        <img src="images/especialidades2.png" alt="Imagem 2">
+      </div>
+      <div class="slide">
+        <img src="images/especialidades3.png" alt="Imagem 3">
+      </div>
+      <div class="slide">
+        <img src="images/especialidades4.png" alt="Imagem 4">
+      </div>
+
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+
+    </div>
+
+    <div class="manual-navigation">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+
+  </div>
+
+  <!--Fim carrossel-->
+
+  <!--Corpo-->
+
+  <form class="botao">
+    <div class="texto"><img src="images/escolha.png" id="escolha">
+      <!--<label>Escolha uma especialidade</label> -->
+      <select name="linguagem" required="required" id="especialidades">
+        <option value="">Selecione...</option>
+        <option>Alergia e Imunologia</option>
+        <option>Anestesiologia</option>
+        <option>Dermatologia</option>
+        <option>Infectologia</option>
+        <option>Cardiologia</option>
+        <option>Neurologia</option>
+        <option>Cirurgia</option>
+        <option>Cirurgia Plástica</option>
+        <option>Ortopedia</option>
+        <option>Geriatria</option>
+        <option>Ginecologia</option>
+        <option>Obstetríscia</option>
+        <option>Mastologia</option>
+        <option>Oftalmologia</option>
+        <option>Otorrinolaringologista</option>
+        <option>Pediatria</option>
+        <option>Radiologia</option>
+        <option>Reumatologia</option>
+        <option>Urologia</option>
+      </select>
+      <button type="submit" onclick="procurar()" id="entrar">Enviar</button>
+  </form>
+
+  <!--Fim corpo-->
+
+  <!--Script-->
+
+  <script>
+    function procurar() {
+      event.preventDefault();
+      var especialidade = document.getElementById('especialidades');
+      var abc = (especialidades).value;
+
+      var especial = [
+        { "especialidade": "Cirurgia" },
+        { "especialidade": "Cirurgia Plástica" },
+        { "especialidade": "" },
+      ];
+      if (abc == especial[0].especialidade) {
+        window.alert("Cirurgia selecionada!");
+        return esp();
+      } if (abc == especial[1].especialidade) {
+        window.alert("Cirurgia Plástica selecionada!");
+        return esp();
+      } if (abc == especial[2].especialidade) {
+        window.alert("Selecione uma especialidade");
+      } if (abc != especial[0].especialidade && abc != especial[1].especialidade && abc != especial[2].especialidade) {
+        window.alert(abc + " selecionada!");
+        return redi();
+      }
+    }
+
+    function redi() {
+      event.preventDefault();
+      window.location.href = "";
+    }
+
+    function esp() {
+      event.preventDefault();
+      window.location.href = "";
+    }
+
+    function voltar() {
+      event.preventDefault();
+      window.location.href = "";
+
+    }
+
+    function login() {
+      event.preventDefault();
+      window.location.href = "";
+
+    }
+  </script>
+
+  <!--Fim script-->
+
+</body>
+
+</html>

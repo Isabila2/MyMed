@@ -1,0 +1,218 @@
+/*Tudo*/
+
+/*Fim tudo*/
+
+/*Header*/
+
+#foto2 {
+    padding-left: 75%;
+}
+
+/*Fim header*/
+
+/*Corpo*/
+
+.Centro {
+    width: 101%;
+}
+
+.Bloco1 {
+    background-color: #7BC8FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    margin-top: 5px;
+    text-align: center;
+    align-content: center;
+}
+
+.Bloco2 {
+    background-color: #7BC8FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    margin-top: 5px;
+    right: 300px;
+}
+
+.Bloco3 {
+    background-color: #7BC8FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    margin-top: 5px;
+    right: 600px;
+}
+
+.Bloco4 {
+    background-color: #7BC8FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    margin-top: 5px;
+    right: 600px;
+}
+
+.Bloco5 {
+    background-color: #7BC8FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    margin-top: 5px;
+    right: 800px;
+}
+
+#Quadrado2 {
+    padding: 0px 50px;
+}
+
+.Bloco6 {
+    background-color: #7BC8FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.Bloco7 {
+    background-color: #7BC8FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    margin-top: 5px;
+    right: 300px;
+}
+
+.Bloco8 {
+    background-color: #7BC8FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    margin-top: 5px;
+    right: 600px;
+}
+
+.Bloco9 {
+    background-color: #7BC8FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    margin-top: 5px;
+    right: 600px;
+}
+
+.Bloco10 {
+    background-color: #7BC8FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    margin-top: 5px;
+    right: 800px;
+}
+
+.Bloco11 {
+    background-color: #7BC8FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    margin-top: 5px;
+    right: 800px;
+}
+
+.Bloco12 {
+    background-color: #7BC8FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    margin-top: 5px;
+    right: 800px;
+}
+
+.Bloco1:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+
+}
+
+.Bloco2:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+
+}
+
+.Bloco3:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+
+}
+
+.Bloco4:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+
+}
+
+.Bloco5:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.Bloco6:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.Bloco7:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.Bloco8:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.Bloco9:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.Bloco10:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.Bloco11:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.Bloco12:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.texto {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.quadradao {
+    display: flex;
+}
+
+/*Fim corpo*/

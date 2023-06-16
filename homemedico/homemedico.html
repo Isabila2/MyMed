@@ -5,44 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="homemedico.css">
     <link rel="Logoo" href="images/Logoo.png">
-    <title>Med+</title>
+    <title>Med+ - Médicos e Administradores</title>
 
 </head>
 
 <body>
+    <!--Header-->
 
-    <!-- Cabeçalho -->
     <header>
-
         <div class="topico">
             <img src="images/logoespee.png" height="40%" width="300px" button id="botlogo" onclick="voltar()">
-            <a href="/"><button class="botoes">Home</button></a>
-            <a href=""><button class="botoes">Exames</button></a>
+
+            <a href=""><button class="botoes">Home</button></a>
+
             <a href=""><button class="botoes">Consultas</button></a>
-            <a href=""><button class="botoes">Cirurgias</button></a>
-            <a href=""><button class="botoes">Planos</button></a>
-            <img src="images/iconelogin.png" height="80px" width="80px" id="foto2" button id="botlogi"
-                onclick="OpenPopUp()">
+
+            <a href="#final"><button class="botoes">Contatos</button></a>
+
+
+            <img src="" height="80px" width="100px" id="foto2" button id="botlogi" onclick="medico()">
         </div>
     </header>
 
-    <!--Fim Cabeçalho-->
+    <!--Fim header-->
     <br>
     <br>
     <br>
     <br>
+
     <!--Script-->
+
     <script>
+
         function voltar() {
             event.preventDefault();
-            window.location.href = "/";
-        }
-
-        function login() {
-            event.preventDefault();
-            window.location.href = "/login.html";
+            window.location.href = "/index.html";
         }
 
         //Carrossel//
@@ -52,26 +52,28 @@
 
         setInterval(function () {
             nextImage();
-        }, 1000)
+        }, 5000)
 
         function nextImage() {
             count++;
             if (count > 4) {
                 count = 1;
             }
+
             document.getElementById("radio" + count).checked = true;
         }
-
-        function OpenPopUp() {
-            window.open('opcoeslog.html', 'popup', 'width=459,height=570');
+        function medico() {
+            window.alert('Você já está logado!')
         }
-    </script>
-    <!--Fim Script-->
 
-    <!-- Corpo -->
+    </script>
+
+    <!--Fim script-->
 
     <main>
-        <!--carrossel-->
+
+        <!--Carrossel-->
+
         <div class="slider">
             <div class="slides">
 
@@ -81,16 +83,16 @@
                 <input type="radio" name="radio-btn" id="radio4">
 
                 <div class="slide first">
-                    <a href="#planos"> <img src="images/homesel1.png" alt="Imagem 1"></a>
+                    <img src="images/medicos1.png" alt="Imagem 1">
                 </div>
                 <div class="slide">
-                    <img src="images/homesel2.png" alt="Imagem 2">
+                    <img src="images/medicos2.png" alt="Imagem 2">
                 </div>
                 <div class="slide">
-                    <img src="images/homesel3.png" alt="Imagem 3">
+                    <img src="images/medicos3.png" alt="Imagem 3">
                 </div>
                 <div class="slide">
-                    <img src="images/homesel4.png" alt="Imagem 4">
+                    <img src="images/medicos4.png" alt="Imagem 4">
                 </div>
 
                 <div class="navigation-auto">
@@ -109,24 +111,17 @@
                 <label for="radio4" class="manual-btn"></label>
             </div>
 
+            <!--Fim carrossel-->
         </div>
-        <!--Fim carrossel-->
-
+        <!--Corpo-->
         <img src="images/bemvindo.png" id="bemvindo">
-        <img src="images/encontre.png" id="encontre">
-        <a href=""><button class="botone">Especialidades</button></a>
+        <img src="images/problemas.png" id="encontre">
+        <a href="#final"><button class="botone">Contatos</button></a>
     </main>
     <br><br>
-    <br>
-    <div class="meio">
-        <p class="guia">Guia MED+</p>
-        <a href=""> <img src="images/exp1.png" id="exp1"> </a>
-        <a href=""><img src="images/exp2.png" id="exp2"></a>
-        <a href=""><img src="images/exp3.png" id="exp3"></a>
-        <a href="#unidades"><img src="images/exp4.png" id="exp4"></a>
-    </div>
+
     <br><br><br>
-    <p class="titulouni" id="unidades">UNIDADES</p>
+    <p class="titulouni" id="unidades">AGENDA MED+</p>
     <div class="unidades">
         <img src="images/decouni1.png" id="decouni1">
 
@@ -134,35 +129,31 @@
             <img src="images/uni1.png" id="uni1">
             <h1 id="tituni">Unidade Nova Odessa</h1>
             <p id="textuni">R. dos Jacarandás, 100 - Jardim das Palmeiras, Nova Odessa - SP</p>
-            <a href=""><button class="butuni">AGENDE</button></a>
+            <a href=""><button class="butuni">AGENDA</button></a>
 
         </div>
         <div class="card2">
             <img src="images/uni2.png" id="uni2">
             <h1 id="tituni">Unidade Sumaré</h1>
             <p id="textuni">Av. Rebouças, 3965 - Jardim São Carlos, Sumaré - SP</p>
-            <a href=""><button class="butuni">AGENDE</button></a>
+            <a href=""><button class="butuni">AGENDA</button></a>
         </div>
         <img src="images/decouni2.png" id="decouni2">
     </div>
     <br><br><br>
-    <div class="blur">
-        <div class="deco" id="planos">
-            <img src="images/melhores.png" id="decora">
-            <img src="images/med+1.png" id="pla1">
-            <img src="images/med+2.png" id="pla2">
-            <img src="images/med+3.png" id="pla3">
-
-        </div>
-    </div>
     <!--Fim corpo-->
+
     <!--Footer-->
     <footer>
-        <div class="final">
+        <div class="final" id="final">
 
             <h1 id="finale">Central de Atendimentos MED+</h1>
             <h2 id="finale2">(19)99378-4877 - Sumaré</h2>
             <h2 id="finale2">(19)99439-2278 - Nova Odessa</h2>
+            <h1 id="finale">Central de Ajuda MED+</h1>
+            <h2 id="finale2">(19)99433-7626 - Sumaré</h2>
+            <h2 id="finale2">(19)9903-5784 - Nova Odessa</h2>
+
 
             <h2 id="direitos">© 2023 Clínica MED+. Todos os Direitos Reservados.</h2>
             <div class="redesocial">
@@ -175,6 +166,7 @@
             <img src="images/baixe2.png" id="baixe2">
         </div>
     </footer>
+
     <!--Fim footer-->
 
 
