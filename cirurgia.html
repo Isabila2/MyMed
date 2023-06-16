@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cirurgias-MedPlus</title>
+  <link href="cirurgia.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--cabeçalho-->
+  <header>
+    <div class="header">
+    <div class="topico">
+<img src="images/logoespee.png" height="40%" width="300px" button id="botlogo" onclick="voltar()">
+    
+
+        
+        <img src="images/iconesaida.png" height="80px" width="80px" id="foto2" button id="botlogo" onclick="voltar()">
+        <img src="images/iconelogin.png" height="80px" width="80px" id="foto3" button id="botlogo" onclick="login()">
+
+  </div>
+</div>
+  </header>
+
+
+
+  
+  
+  <!--botao-->
+
+ 
+  <div class="imagem"><img src="images/cirurgia.png" id="imagem">
+  <form class="botao">
+    <p id="titulo">Cirurgias</p>
+    
+    <div class="label"><label id="labell">Escolha uma especialidade</label></div>
+    <select name="linguagem" required="required" id="cirurgias">
+
+      <option value="">Selecione...</option>
+      <option>Cirurgia Cardiovascular</option>
+      <option>Cirurgia Geral</option>
+      <option>Neurocirurgia</option>
+      <option>Cirurgia do Aparelho Digestivo</option>
+      <option>Cirurgia Cabeça</option>
+      <option>Cirurgia Plástica</option>
+      <option>Cirurgia Vascular</option>
+      <option>Cirurgia Torácica</option>
+      <option>Cirurgia Oncológica</option>
+      <option>Cirurgia Pediátrica</option>
+      <option>Cirurgia Coloproctológica</option>
+      
+      
+    </select>
+ <br>
+ <div class="label"><label id="labell">Selecione um médico</label></div>
+    <select name="linguagem" required="required" id="medicos">
+
+        <option value="">Selecione...</option>
+        <option>Alváres Barreto Santana</option>
+        <option>Alline Barros dos Santos</option>
+        <option>Carlos Ferreira dos Santos</option>
+        <option>Fátima Bernardes da Silva</option>
+        <option>Fátima Celistino Almeida</option>
+        <option>Fernada Hira </option>
+        <option>Jonas Augusto Fraires</option>
+        <option>Samara Cariri dos Santos</option>
+        <option>Yago Hurin Carvalho</option>
+      
+      </select>
+  
+    <button type="submit" onclick="apenasse()" id="entrar">Enviar</button>
+
+
+
+    <div id="subTela" style="display: none;">
+        <img src= "images/realizou.png" id="sub">
+        <label for="sim" id="sim">Sim</label>
+        <input type="radio" id="sim" name="resposta" value="sim">
+        <label for="nao">Não</label>
+        <input type="radio" id="nao" name="resposta" value="nao">
+        <button onclick="verificarResposta()" id="mandar">Confirmar</button>
+        <button onclick="fecharSubTela()" id="mandar">Fechar</button>
+    </div>
+
+   
+
+
+    <script>
+        function apenasse(){event.preventDefault();
+        var cirurgias = document.getElementById('cirurgias');
+        var abc = (cirurgias).value;
+
+        var medicos = document.getElementById('medicos');
+        var def = (medicos).value;
+
+        if( abc == "") {
+            window.alert("Selecione uma especialidade");
+        } if( def == "") {
+            window.alert("Selecione um médico"); 
+        } if( abc != "" && def != "" ) {
+            return abrirSubTela();
+        }
+    }
+
+
+        function abrirSubTela() {
+            document.getElementById("subTela").style.display = "block";
+        }
+
+        
+
+        function fecharSubTela() {
+            document.getElementById("subTela").style.display = "none";
+        }
+      
+
+        function verificarResposta() {
+            var cirurgias = document.getElementById('cirurgias');
+        var abc = (cirurgias).value;
+
+        var medicos = document.getElementById('medicos');
+        var def = (medicos).value;
+
+            var resposta = document.querySelector('input[name="resposta"]:checked');
+
+            if (resposta) {
+                if (resposta.value === "sim") {
+                    alert("Por favor, ligue para a central de atendimentos MED+ para confirmar a sua " + abc + " com o(a) médico(a) " + def +"!");
+                  
+                } else if (resposta.value === "nao") {
+    
+                    fecharSubTela();
+                }
+            } else {
+                alert("Por favor, selecione 'Sim' ou 'Não'.");
+            }
+        }
+
+        function voltar(){event.preventDefault();
+      window.location.href="/index.html";
+
+    }
+
+    function login(){event.preventDefault();
+      window.location.href="/opcoeslog.html";
+
+    }
+    </script>
+  </form>
+ 
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+
+#foto2 {
+    margin-left: 28%;
+}
+
+
+#foto2:hover {
+
+    transform: scale(1.1);
+    transition: all 0.5s;
+
+}
+
+
+#botlogo {
+height: 80px;
+}
+
+.topico {
+    padding: 0%;
+    margin-bottom: 0px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logincerto {
+    align-content: center;
+}
+
+.botoes {
+    background-color: #93D1FF;
+    border-radius: 40px;
+    border-color: #ffffff;
+    height: 50px;
+    width: 120px;
+    font-family: Mate SC;
+    font-size: large;
+    margin-bottom: 10%;
+}
+
+.botoes:hover {
+    background-color: #93D1FF;
+    box-shadow: 5px 2px #4b93ca;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.botao {
+
+    width: 600px;
+    justify-content: space-between;
+    padding: 15px;
+    padding-left: 10px;
+    align-items: center;
+
+}
+
+.Bloco1 {
+
+    border: 3px solid #93D1FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 350px;
+    height: 680px;
+    text-align: center;
+    margin-top: 5px;
+    text-align: center;
+    align-content:center;
+    position:absolute;
+    left: 680px;
+
+}
+
+
+.Bloco2 {
+
+    border: 1px solid #93D1FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 350px;
+    height: 680px;
+    text-align: center;
+    margin-top: 5px;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    left: 45PX;
+
+}
+
+.Bloco3 {
+
+ 
+    border: 1px solid #93D1FF;
+    border-radius: 15px 15px 15px 15px;
+    width: 350px;
+    height: 680px;
+    text-align: center;
+    margin-top: 5px;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    left:1300PX ;
+
+}
+
+
+.Blocos {
+    position: absolute;
+    margin-left: 78px;
+}
+
+
+main {
+    height: 800px;
+    
+}

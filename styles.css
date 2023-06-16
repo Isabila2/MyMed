@@ -1,0 +1,167 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Mate SC;
+}
+    /* Inicio cabeçalho */
+    header{
+        border-bottom: 10px solid #2079B0;
+    }
+
+   
+
+    .logoimg{
+        width: 325px; 
+    
+    }
+    .imglogin{
+        height: 130px;
+        width: 180px;
+        
+    }
+   .logincerto{
+    align-content: right;
+   }
+    .botoes{
+        background-color: #93D1FF;
+        border-radius: 15px;
+        border-color: #68b8e9;
+        height: 45px;
+        font-family: Mate SC;
+        font-size: larger;
+       
+    }
+    .botao{
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+    }
+/* Inicio Corpo */
+
+
+
+
+/* Imagem principal e agende e preços */
+    main{
+        background-color: rgb(196, 203, 212);
+        width: 100%;
+        height: 685px;
+        z-index: 0;
+
+    }
+    
+    .agende{
+        background-image: url(images/Fundohp.jfif);
+        height: 222px;
+        width: 100%;
+        background-color: #abc0ce;
+        border-bottom: 10px solid #2079B0;
+        background-size: cover;
+    }
+
+    .textoagende{
+        width: 100%;
+        padding-left: 44%;
+        font-family: Mate SC;
+    }
+
+    .precoa{
+        width: 100%;
+        padding-left: 43%;
+        top: 12%;
+        
+    }
+    .unidade{
+        width: 100%;
+        padding-left: 43%;
+        top: 14%;
+        z-index: 1;
+    }
+
+.retangulounidade{
+    width: 200px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    position: absolute;
+    right: 46%;
+    z-index: 0; 
+}
+
+
+
+    /* Começo das Frases */
+    .abafrases{
+        width: 100%;
+        height: 200px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .quadrados{
+        align-content: center;
+        width: 200px;
+        height: 160px;
+        border-radius: 15px 15px 0px 15px;
+    }
+
+    .textosfrases{
+     margin: 15px;
+        text-align: center;
+        font-size: 27px;
+    }
+
+    #quadrado1{
+        color: #fff;
+        background-color: #93D1FF;
+        justify-content: center;
+        z-index: 2;
+    }
+    #quadrado2{
+        color: #fff;
+        background-color: #68b8e9;
+        align-items: center;
+        z-index: 2;
+    }
+    #quadrado3{
+        color: #fff;
+        background-color: #2079B0;
+        justify-content: center;
+        z-index: 2;
+    }
+    .passoap{
+        width: 100%;
+        height: 180px;
+        border-bottom: 10px solid #2079B0;
+        border-top: 10px solid #2079B0;
+    }
+
+    .imgpap{
+        width: 100%;
+
+
+    }
+    
+    
+    /* Inicio Rodapé */
+    footer{
+        background-image: url(images/fundocity.jpg);
+        background-size: cover;
+        filter: grayscale(85%);
+        width: 100%;
+        height: 200px;
+        
+    }
+
+    .letrasfinais{
+        color: #fff;
+    }
+#direitos{
+    position: absolute;
+    bottom: 1%;
+    
+}
