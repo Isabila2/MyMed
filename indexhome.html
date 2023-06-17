@@ -18,11 +18,11 @@
 
         <div class="topico">
             <img src="images/logoespee.png" height="40%" width="300px" button id="botlogo" onclick="voltar()">
-            <a href="/"><button class="botoes">Home</button></a>
-            <a href=""><button class="botoes">Exames</button></a>
-            <a href=""><button class="botoes">Consultas</button></a>
-            <a href=""><button class="botoes">Cirurgias</button></a>
-            <a href=""><button class="botoes">Planos</button></a>
+            <a href="indexhome.html"><button class="botoes">Home</button></a>
+            <a href="exame.html"><button class="botoes">Exames</button></a>
+            <a href="consultaspac.html"><button class="botoes">Consultas</button></a>
+            <a href="cirurgias.html"><button class="botoes">Cirurgias</button></a>
+            <a href="planos.html"><button class="botoes">Planos</button></a>
             <img src="images/iconelogin.png" height="80px" width="80px" id="foto2" button id="botlogi"
                 onclick="OpenPopUp()">
         </div>
@@ -37,12 +37,12 @@
     <script>
         function voltar() {
             event.preventDefault();
-            window.location.href = "/";
+            window.location.href = "";
         }
 
         function login() {
             event.preventDefault();
-            window.location.href = "/login.html";
+            window.location.href = "usuariolog.html";
         }
 
         //Carrossel//
@@ -63,7 +63,7 @@
         }
 
         function OpenPopUp() {
-            window.open('opcoeslog.html', 'popup', 'width=459,height=570');
+            window.open('usuariolog.html', 'popup', 'width=459,height=570');
         }
     </script>
     <!--Fim Script-->
@@ -114,15 +114,15 @@
 
         <img src="images/bemvindo.png" id="bemvindo">
         <img src="images/encontre.png" id="encontre">
-        <a href=""><button class="botone">Especialidades</button></a>
+        <a href="especialidades.html"><button class="botone">Especialidades</button></a>
     </main>
     <br><br>
     <br>
     <div class="meio">
         <p class="guia">Guia MED+</p>
-        <a href=""> <img src="images/exp1.png" id="exp1"> </a>
-        <a href=""><img src="images/exp2.png" id="exp2"></a>
-        <a href=""><img src="images/exp3.png" id="exp3"></a>
+        <a href="especialidades.html"> <img src="images/exp1.png" id="exp1"> </a>
+        <a href="consultaspac.html"><img src="images/exp2.png" id="exp2"></a>
+        <a href="usuariolog.html"><img src="images/exp3.png" id="exp3"></a>
         <a href="#unidades"><img src="images/exp4.png" id="exp4"></a>
     </div>
     <br><br><br>
@@ -134,14 +134,14 @@
             <img src="images/uni1.png" id="uni1">
             <h1 id="tituni">Unidade Nova Odessa</h1>
             <p id="textuni">R. dos Jacarandás, 100 - Jardim das Palmeiras, Nova Odessa - SP</p>
-            <a href=""><button class="butuni">AGENDE</button></a>
+            <a href="consultaspac.html"><button class="butuni">AGENDE</button></a>
 
         </div>
         <div class="card2">
             <img src="images/uni2.png" id="uni2">
             <h1 id="tituni">Unidade Sumaré</h1>
             <p id="textuni">Av. Rebouças, 3965 - Jardim São Carlos, Sumaré - SP</p>
-            <a href=""><button class="butuni">AGENDE</button></a>
+            <a href="consultaspac.html"><button class="butuni">AGENDE</button></a>
         </div>
         <img src="images/decouni2.png" id="decouni2">
     </div>

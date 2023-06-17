@@ -1,19 +1,24 @@
+/*Tudo*/
+
+main {
+    height: 800px;
+}
+
+/*Fim tudo*/
+
+/*Header*/
 
 #foto2 {
     margin-left: 28%;
 }
 
-
 #foto2:hover {
-
     transform: scale(1.1);
     transition: all 0.5s;
-
 }
 
-
 #botlogo {
-height: 80px;
+    height: 80px;
 }
 
 .topico {
@@ -28,6 +33,10 @@ height: 80px;
 .logincerto {
     align-content: center;
 }
+
+/*Fim header*/
+
+/*Corpo*/
 
 .botoes {
     background-color: #93D1FF;
@@ -48,17 +57,14 @@ height: 80px;
 }
 
 .botao {
-
     width: 600px;
     justify-content: space-between;
     padding: 15px;
     padding-left: 10px;
     align-items: center;
-
 }
 
 .Bloco1 {
-
     border: 3px solid #93D1FF;
     border-radius: 15px 15px 15px 15px;
     width: 350px;
@@ -66,15 +72,12 @@ height: 80px;
     text-align: center;
     margin-top: 5px;
     text-align: center;
-    align-content:center;
-    position:absolute;
+    align-content: center;
+    position: absolute;
     left: 680px;
-
 }
 
-
 .Bloco2 {
-
     border: 1px solid #93D1FF;
     border-radius: 15px 15px 15px 15px;
     width: 350px;
@@ -85,12 +88,9 @@ height: 80px;
     align-content: center;
     position: absolute;
     left: 45PX;
-
 }
 
 .Bloco3 {
-
- 
     border: 1px solid #93D1FF;
     border-radius: 15px 15px 15px 15px;
     width: 350px;
@@ -100,18 +100,12 @@ height: 80px;
     text-align: center;
     align-content: center;
     position: absolute;
-    left:1300PX ;
-
+    left: 1300PX;
 }
-
 
 .Blocos {
     position: absolute;
     margin-left: 78px;
 }
 
-
-main {
-    height: 800px;
-    
-}
+/*Fim corpo*/
