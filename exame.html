@@ -47,6 +47,10 @@
             alert("Por favor, selecione 'Sim' ou 'Não'."); // Alerta para resposta não selecionada
         }
     }
+
+    function OpenPopUp() {
+            window.open('usuariolog.html', 'popup', 'width=459,height=570');
+        }
 </script>
 
 <!--Fim script-->
@@ -61,10 +65,10 @@
 
     button {
         padding: 10px 20px;
-        background-color: #2079b0;
+        background-color: #93D1FF;
         color: #fff;
         border: none;
-        border-radius: 4px;
+        border-radius: 10px;
         cursor: pointer;
     }
 
@@ -78,7 +82,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #2079b0(0, 0, 0, 0.5);
+        background-color: #ffffff(0, 0, 0, 0.5);
         /* Fundo semi-transparente */
         z-index: 9999;
         /* Nível de sobreposição para aparecer acima do conteúdo principal */
@@ -96,10 +100,10 @@
         width: 600px;
         max-width: 90%;
         border-radius: 8px;
-        box-shadow: 0 2px 6px #2079b0(0, 0, 0, 0.3);
+        box-shadow: 0 2px 6px #ffffff(0, 0, 0, 0.3);
         text-align: center;
-        background-color: #7BC8FF;
-        border: 4px solid #2079b0;
+        background-color: #ffffff;
+        border: 1px solid #000000;
     }
 
     .sub-tela-titulo {
@@ -115,7 +119,7 @@
     .sub-tela-opcoes {
         display: flex;
         justify-content: center;
-        background-color: #E7E7E7;
+        background-color: #a09d9d;
         padding: 10px;
         border-radius: 4px;
     }
@@ -132,6 +136,19 @@
         justify-content: flex-end;
     }
 
+    #tel {
+        background-color: #eceeef;
+        border: 1px solid #a8a8a9;
+        width: 380px;
+        height: 20px;
+        border-radius: 5px;
+    }
+
+    #tela {
+        background-color: #eceeef;
+        border: 1px solid #a8a8a9;
+    }
+
     /*Fim subtela*/
 </style>
 
@@ -139,14 +156,16 @@
 
     <!--Header-->
     <header>
-        <div class="header">
-            <div class="topico"><img src="images/Logoo.png" height="40%" width="300px">
 
-                <img src="images/Voltar.png" height="80px" width="80px" id="foto2" onclick="redirecionar()">
-
-                <img src="images/Login.png" height="80px" width="80px" id="foto3" onclick="Login()">
-
-            </div>
+        <div class="topico">
+            <img src="images/logoespee.png" height="40%" width="300px" button id="botlogo" onclick="voltar()">
+            <a href="indexhome.html"><button class="botos" id="home">Home</button></a>
+            <a href="consultaspac.html"><button class="botos">Consultas</button></a>
+            <a href="cirurgias.html"><button class="botos">Cirurgias</button></a>
+            <a href="planos.html"><button class="botos">Planos</button></a>
+            <a href="sobrenos.html"><button class="botos">Sobre nós</button></a>
+            <img src="images/iconelogin.png" height="80px" width="80px" id="foto2" button id="botlogi"
+                onclick="OpenPopUp()">
         </div>
     </header>
     <!--Fim header-->
@@ -155,8 +174,8 @@
 
     <div id="subTela" class="sub-tela">
         <div class="sub-tela-conteudo">
-            <div style="color: #fff;">
-                <h2>Deseja confirmar sua consulta?</h2>
+            <div style="color: #000000;">
+                <h2>Preencha as informações necessárias para o agendamento do seu exame</h2>
             </div>
             <br>
             <div style="align-items: flex-start;">
@@ -184,7 +203,7 @@
 
                 <br>
                 <label> </label>
-                <select id="tel" name="tel" value="">
+                <select id="tela" name="tel" value="">
                     <option value="NotreDame">NotreDame</option>
                     <option value="Bradesco Saúde">Bradesco Saúde</option>
                     <option value="Unimed">Unimed</option>
@@ -212,7 +231,7 @@
     <!--Corpo-->
 
     <div class="container">
-        <img src="images/Central.png" alt="tela-central" class="Centro">
+        <img src="images/exames.png" alt="tela-central" class="Centro">
     </div>
 
     <div class="quadradao">
