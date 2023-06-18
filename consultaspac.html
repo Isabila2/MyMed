@@ -11,54 +11,34 @@
 <body>
     <!--Header-->
     <header>
-        <div class="topico">
-            <img src="images/logoespee.png" height="40%" width="300px" button="" id="botlogo" onclick="voltar()">
 
-            <a href="indexhome.html"><button class="botoes">Home</button></a>
+        <div class="topico">
+            <img src="images/logoespee.png" height="40%" width="300px" button id="botlogo" onclick="voltar()">
+            <a href="indexhome.html"><button class="botoes" id="home">Home</button></a>
             <a href="exame.html"><button class="botoes">Exames</button></a>
             <a href="cirurgias.html"><button class="botoes">Cirurgias</button></a>
             <a href="planos.html"><button class="botoes">Planos</button></a>
-            <a href="usuariolog.html"><img src="images/Login.png" height="80px" width="80px" id="foto2" button=""></a>
+            <a href="sobrenos.html"><button class="botoes">Sobre nós</button></a>
+            <img src="images/iconelogin.png" height="80px" width="80px" id="foto2" button id="botlogi"
+                onclick="OpenPopUp()">
         </div>
     </header>
+    
     <!--Fim header-->
     <br>
+    <br>
+    <br>
+    <br>
+
     <!--Corpo-->
-    <div class="e975_213">
-        <span class="e975_215">CONHEÇA AS NOSSAS UNIDADES</span>
-        <div class="e975_216"></div>
-        <span class="e975_217">DR. Ricardo Emanuel Lombardi - Radiologista |<button class="b1"
-                onclick="abrirSubTela()">Confirmar Consulta</button></span>
-        <div class="e975_218"></div>
-        <div class="e975_219"></div>
-        <div class="e975_220"></div>
-        <div class="e975_221"></div>
-        <div class="e975_222"></div>
-        <div class="e975_223"></div>
-        <div class="e975_224"></div>
-        <span class="e975_225">DR. Antônio Fagundes Da Conceição - Dermatologista |<button class="b1"
-                onclick="abrirSubTela()">Confirmar Consulta</button></span>
-        <span class="e975_226">DR. Francisco Almeida Boulevar - Oftalmologista |<button class="b1"
-                onclick="abrirSubTela()">Confirmar Consulta</button></span>
-        <span class="e975_227">DR. Olávio Augusto Mendes - Cardiologista |<button class="b1"
-                onclick="abrirSubTela()">Confirmar Consulta</button></span>
-        <span class="e975_228">DR. Lucas Eduardo Rosa - Anestesiologista |<button class="b1"
-                onclick="abrirSubTela()">Confirmar Consulta</button></span>
-        <span class="e975_229">DR. Fábio Henrique Novaes - Urologista |<button class="b1"
-                onclick="abrirSubTela()">Confirmar Consulta</button></span>
-        <span class="e975_230">DR. Gilberto Oliveira Fares Da Silva - Ginecologista |<button class="b1"
-                onclick="abrirSubTela()">Confirmar Consulta</button></span>
-        <span class="e975_232">DR. Roberto Oliveira Mantoan - Neurologista |<button class="b1"
-                onclick="abrirSubTela()">Confirmar Consulta</button></span>
-        <span class="e975_240">2° Andar - Sala 06</span>
-        <span class="e975_241">1° Andar - Sala 05</span>
-        <span class="e975_242">2° Andar - Sala 01</span>
-        <span class="e975_243">1° Andar - Sala 06</span>
-        <span class="e975_244">1° Andar - Sala 03</span>
-        <span class="e975_245">1° Andar - Sala 04</span>
-        <span class="e975_246">2° Andar - Sala 02</span>
-        <span class="e975_247">2° Andar - Sala 03</span>
+    <div class="topo">
+        <img src="images/consultas.png" id="imagem">
     </div>
+    <div class="marcar">
+        <img src="images/marcar.png" id="meiom">
+    </div>
+    <button type="submit" onclick="procurar()" id="entrar">Marcar</button>
+    
     <!--Fim corpo-->
 
     <!--Subtela-->
