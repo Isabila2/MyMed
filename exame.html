@@ -49,8 +49,8 @@
     }
 
     function OpenPopUp() {
-            window.open('usuariolog.html', 'popup', 'width=459,height=570');
-        }
+        window.open('usuariolog.html', 'popup', 'width=459,height=570');
+    }
 </script>
 
 <!--Fim script-->
@@ -63,13 +63,18 @@
 
     /*Botão*/
 
-    button {
-        padding: 10px 20px;
-        background-color: #93D1FF;
-        color: #fff;
-        border: none;
+    .buttone {
+        padding: 15px 25px;
+        background-color: #fdfdfd;
+        color: #0a0a0a;
+        border: 1px solid black;
         border-radius: 10px;
         cursor: pointer;
+        width: 130px;
+    }
+
+    .buttone:hover {
+        background-color: #93D1FF;
     }
 
     /*Fim botão*/
@@ -221,8 +226,8 @@
             <br>
             <br>
 
-            <button onclick="verificarResposta()">Confirmar</button>
-            <button onclick="fecharSubTela()">Fechar</button>
+            <button onclick="verificarResposta()" class="buttone">Confirmar</button>
+            <button onclick="fecharSubTela()" class="buttone">Fechar</button>
         </div>
     </div>
 

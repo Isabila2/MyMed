@@ -51,6 +51,7 @@
     font-family: Mate SC;
     font-size: larger;
     margin-bottom: 10%;
+    color: #ffffff;
     margin-left: 5px;
 }
 
@@ -88,10 +89,7 @@ header {
 
 /*Corpo*/
 #imagem {
-    width: 95%;
-    height: 590px;
-    margin-top: 10px;
-    margin-left: 3%;
+    width: 100%;
 }
 
 
