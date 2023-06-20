@@ -13,24 +13,86 @@ html {
 /*Header*/
 
 #foto2 {
-  margin-left: 70%;
+    margin-left: 10%;
 }
 
 .foto {
-  padding: 0px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .topico {
-  padding: 0px;
-  margin-bottom: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#foto2 {
+    margin-left: 28%;
+}
+
+#foto2:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 #botlogo {
-  background-color: #6d6d6d00;
-  border: 0px;
+    margin-right: 15%;
 }
+
+.topico {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.logincerto {
+    align-content: center;
+}
+
+.botos {
+    background-color: #93d0ff83;
+    border-radius: 40px;
+    border-color: #ffffff;
+    height: 50px;
+    width: 120px;
+    font-family: Mate SC;
+    color: #ffffff;
+    font-size: larger;
+    margin-bottom: 10%;
+    margin-left: 5px;
+}
+
+.botos:hover {
+    background-color: #93D1FF;
+    box-shadow: 5px 2px #4b93ca;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.botao {
+    width: 600px;
+    justify-content: space-between;
+    padding: 15px;
+    padding-left: 15px;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1;
+    width: 100%;
+    height: 10%;
+}
+
+#home {
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
 
 /*Fim header*/
 
@@ -42,6 +104,7 @@ html {
   width: 400%;
   height: 400px;
   overflow: hidden;
+  margin-top: 100px;
 }
 
 .slides {
