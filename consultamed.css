@@ -6,6 +6,83 @@ html {
 
 /*Fim tudo*/
 
+/*Header*/
+header {
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1;
+    width: 100%;
+    height: 10%;
+  }
+  
+  #foto2 {
+    margin-left: 0%;
+  }
+  
+  .foto {
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .topico {
+    padding: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #foto2 {
+    margin-left: 24%;
+  }
+  
+  #foto2:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+  
+  #botlogo {
+    margin-right: 15%;
+  }
+  
+  .topico {
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .logincerto {
+    align-content: center;
+  }
+  
+  .botoes {
+    background-color: #93D1FF;
+    border-radius: 40px;
+    border-color: #ffffff;
+    height: 50px;
+    width: 200px;
+    font-family: Mate SC;
+    color: #ffffff;
+    font-size: larger;
+    margin-bottom: 0%;
+    margin-left: 130px;
+  }
+  
+  .botoes:hover {
+    background-color: #93D1FF;
+    box-shadow: 5px 2px #4b93ca;
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+  
+  .botao {
+    width: 600px;
+    justify-content: space-between;
+    padding: 15px;
+    padding-left: 10px;
+    align-items: center;
+  }
+/*Fim header*/
 /*Corpo*/
 .a1 {
     padding: 10px 20px;

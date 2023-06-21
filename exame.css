@@ -42,20 +42,20 @@
     align-content: center;
 }
 
-.botos {
+.botoes {
     background-color: #93d0ff83;
     border-radius: 40px;
     border-color: #ffffff;
     height: 50px;
     width: 120px;
     font-family: Mate SC;
-    color: #ffffff;
     font-size: larger;
+    color: #ffffff;
     margin-bottom: 10%;
     margin-left: 5px;
 }
 
-.botos:hover {
+.botoes:hover {
     background-color: #93D1FF;
     box-shadow: 5px 2px #4b93ca;
     transform: scale(1.1);
@@ -79,10 +79,6 @@ header {
     height: 10%;
 }
 
-#home {
-    margin-left: 40px;
-    margin-top: 5px;
-}
 
 /*Fim header*/
 
@@ -292,7 +288,8 @@ header {
     display: flex;
 }
 
-.container{
+.container {
     background-color: rgb(255, 255, 255);
 }
+
 /*Fim corpo*/
