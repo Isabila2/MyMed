@@ -92,52 +92,57 @@ header {
 .Bloco1 {
     background-color: #7BC8FF;
     border-radius: 15px 15px 15px 15px;
-    width: 600px;
+    width: 550px;
     height: 60px;
     text-align: center;
     margin-top: 5px;
     text-align: center;
     align-content: center;
+    margin-left: 20px;
 }
 
 .Bloco2 {
     background-color: #7BC8FF;
     border-radius: 15px 15px 15px 15px;
-    width: 600px;
+    width: 550px;
     height: 60px;
     text-align: center;
     margin-top: 5px;
     right: 300px;
+    margin-left: 20px;
 }
 
 .Bloco3 {
     background-color: #7BC8FF;
     border-radius: 15px 15px 15px 15px;
-    width: 600px;
+    width: 550px;
     height: 60px;
     text-align: center;
     margin-top: 5px;
     right: 600px;
+    margin-left: 20px;
 }
 
 .Bloco4 {
     background-color: #7BC8FF;
     border-radius: 15px 15px 15px 15px;
-    width: 600px;
+    width: 550px;
     height: 60px;
     text-align: center;
     margin-top: 5px;
     right: 600px;
+    margin-left: 20px;
 }
 
 .Bloco5 {
     background-color: #7BC8FF;
     border-radius: 15px 15px 15px 15px;
-    width: 600px;
+    width: 550px;
     height: 60px;
     text-align: center;
     margin-top: 5px;
     right: 800px;
+    margin-left: 20px;
 }
 
 #Quadrado2 {
@@ -147,70 +152,77 @@ header {
 .Bloco6 {
     background-color: #7BC8FF;
     border-radius: 15px 15px 15px 15px;
-    width: 600px;
+    width: 550px;
     height: 60px;
     text-align: center;
     margin-top: 5px;
+    margin-left: 20px;
 }
 
 .Bloco7 {
     background-color: #7BC8FF;
     border-radius: 15px 15px 15px 15px;
-    width: 600px;
+    width: 550px;
     height: 60px;
     text-align: center;
     margin-top: 5px;
     right: 300px;
+    margin-left: 20px;
 }
 
 .Bloco8 {
     background-color: #7BC8FF;
     border-radius: 15px 15px 15px 15px;
-    width: 600px;
+    width: 550px;
     height: 60px;
     text-align: center;
     margin-top: 5px;
     right: 600px;
+    margin-left: 20px;
 }
 
 .Bloco9 {
     background-color: #7BC8FF;
     border-radius: 15px 15px 15px 15px;
-    width: 600px;
+    width: 550px;
     height: 60px;
     text-align: center;
     margin-top: 5px;
     right: 600px;
+    margin-left: 20px;
 }
 
 .Bloco10 {
     background-color: #7BC8FF;
     border-radius: 15px 15px 15px 15px;
-    width: 600px;
+    width: 550px;
     height: 60px;
     text-align: center;
     margin-top: 5px;
     right: 800px;
+    margin-left: 20px;
 }
 
 .Bloco11 {
     background-color: #7BC8FF;
     border-radius: 15px 15px 15px 15px;
-    width: 600px;
+    width: 550px;
     height: 60px;
     text-align: center;
     margin-top: 5px;
     right: 800px;
+    margin-left: 20px;
 }
 
 .Bloco12 {
     background-color: #7BC8FF;
     border-radius: 15px 15px 15px 15px;
-    width: 600px;
+    width: 550px;
     height: 60px;
     text-align: center;
     margin-top: 5px;
     right: 800px;
+    margin-left: 20px;
 }
 
 .Bloco1:hover {
