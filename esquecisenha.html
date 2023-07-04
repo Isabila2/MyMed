@@ -106,7 +106,14 @@
     var def = (senha).value;
 
     // Verificar se o usuário existe e a senha está correta
-    if (abc == def) {
+    if (abc == "" && def == "") {
+      // Login bem-sucedido
+      window.alert("Crie uma nova senha");
+      return false;
+
+      // Redirecionar para a página principal, por exemplo:
+
+    } if (abc == def) {
       // Login bem-sucedido
       window.alert("Senha nova pronta!")
       window.location.href = "loginpac.html";

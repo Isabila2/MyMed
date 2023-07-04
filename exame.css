@@ -305,3 +305,110 @@ header {
 }
 
 /*Fim corpo*/
+
+/* Inicio Rodapé */
+
+footer {
+    background-image: url(images/imgfooter.png);
+    background-size: cover;
+    width: 100%;
+    height: 602px;
+    margin-top: 10px;
+  }
+  
+  .letrasfinais {
+    color: #fff;
+  }
+  
+  #direitos {
+    color: #ffffff;
+    margin-top: 430px;
+  }
+  
+  #siga {
+    color: #ffffff;
+    margin-left: 1440px;
+    margin-top: -600px;
+  }
+  
+  #siga:hover {
+    color: #93D1FF;
+  }
+  
+  #redes {
+    color: #000000;
+    margin-left: 1440px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    width: 140px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: #4b93ca;
+  }
+  
+  #redes:hover {
+    color: #ffffff;
+    background-color: #2079B0;
+  }
+  
+  #finale {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Mate SC;
+    margin-top: 50px;
+  }
+  
+  #finale2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Mate SC;
+    margin-top: 0px;
+  }
+  
+  #finale2:hover {
+    color: #93D1FF;
+  }
+  
+  #finale:hover {
+    color: #93D1FF;
+  }
+  
+  #imagemfinals {
+    margin-left: px;
+    width: 400px;
+    height: 130px;
+  }
+  
+  #baixee {
+    color: #ffffff;
+    margin-left: 1440px;
+    margin-top: 0px;
+  }
+  
+  #baixee:hover {
+    color: #92D1FF;
+  }
+  
+  #baixe1 {
+    margin-left: 1330px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 230px;
+  }
+  
+  #baixe2 {
+    border-radius: 10px;
+    width: 230px;
+  }
+  
+  #baixe1:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+  
+  #baixe2:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+  
+  /*Fim footer*/

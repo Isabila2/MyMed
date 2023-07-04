@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="exame.css">
-    <title>Exames.Med+</title>
+    <title>Exames-Med+</title>
 </head>
 <!--Script-->
 
@@ -21,26 +21,65 @@
 
     // Função para abrir a sub-tela
     function abrirSubTelaum() {
-
-                    var cpf = document.getElementById('cpf');
-                    var abc = (cpf).value;
-
-                    if (resposta) {
-                        if (abc ) {
-                            alert("Por favor, ligue para a central de atendimentos MED+ para confirmar a sua " + abc + " com o(a) médico(a) " + def + "!");
-
-                        } else if (resposta.value === "nao") {
-
-                            fecharSubTela();
-                        }
-                    } else {
-                        alert("Por favor, selecione 'Sim' ou 'Não'.");
-                    }
-                }
-
         document.getElementById("subTelaum").style.display = "block";
     }
 
+    function apenasse() {
+                    event.preventDefault();
+                    var cpf = document.getElementById('cpf');
+                    var abc = (cpf).value;
+
+            
+                    if (abc == "") {
+                        window.alert("Digite seu CPF");
+                    } if (abc != "") {
+                        return validarCPF(cpf);
+                    }
+                }
+
+
+                function validarCPF(cpf) {
+                    var cpf = document.getElementById('cpf');
+                    var abc = (cpf).value;
+
+          if (abc.length !== 11) {
+            window.alert("CPF inválido");
+            return false;
+          }
+
+          if (/^(\d)\1+$/.test(cpf)) {
+            window.alert("CPF inválido");
+            return false;
+          }
+
+          let soma = 0;
+          for (let i = 0; i < 9; i++) {
+            soma += parseInt(abc.charAt(i)) * (10 - i);
+          }
+          let resto = soma % 11;
+          let digito1 = resto < 2 ? 0 : 11 - resto;
+
+          if (digito1 !== parseInt(abc.charAt(9))) {
+            window.alert("CPF inválido");
+            return false;
+          }
+
+          soma = 0;
+          for (let i = 0; i < 10; i++) {
+            soma += parseInt(abc.charAt(i)) * (11 - i);
+          }
+          resto = soma % 11;
+          let digito2 = resto < 2 ? 0 : 11 - resto;
+
+          if (digito2 !== parseInt(abc.charAt(10))) {
+            window.alert("CPF inválido");
+            return false;
+          }
+          window.alert("CPF encontrado!");
+          return abrirSubTela();
+        }
+
+         
     function abrirSubTela() {
         document.getElementById("subTela").style.display = "block";
     }
@@ -174,6 +213,14 @@
         border-radius: 5px;
     }
 
+    #cpf{
+        background-color: #eceeef;
+        border: 1px solid #a8a8a9;
+        width: 380px;
+        height: 29px;
+        border-radius: 5px;
+    }
+
     #tela {
         background-color: #eceeef;
         border: 1px solid #a8a8a9;
@@ -206,9 +253,10 @@
      <div id="subTelaum" class="sub-tela">
         <div class="sub-tela-conteudo">
             <div style="color: #000000;">
-                <h2>Para agendar o exame, digite seu CPF</h2>
+                <h1>Para agendar o exame, digite seu CPF.</h1>
+                <a href="planos.html"><h3 id="caso">Caso não for cliente, escolha o plano desejado e faça parte da MED+.</h3></a>
             </div>
-            <br>
+        
             <div style="align-items: flex-start;">
             
                 <br>
@@ -221,7 +269,7 @@
             </div>
             
 
-            <button onclick="abrirSubTela()" class="buttone">Confirmar</button>
+            <button onclick="apenasse()" class="buttone">Confirmar</button>
             <button onclick="fecharSubTelaum()" class="buttone">Fechar</button>
         </div>
     </div>
@@ -367,6 +415,26 @@
 
 
     </div>
+    <!--Footer-->
+    <footer>
+        <div class="final">
+
+            <h1 id="finale">Central de Atendimentos MED+</h1>
+            <h2 id="finale2">(19)99378-4877 - Sumaré</h2>
+            <h2 id="finale2">(19)99439-2278 - Nova Odessa</h2>
+
+            <h2 id="direitos">© 2023 Clínica MED+. Todos os Direitos Reservados.</h2>
+            <div class="redesocial">
+                <h1 id="siga">Siga nossas redes sociais</h1>
+                <h2 id="redes">Instagram</h2>
+                <h2 id="redes">Facebook</h2>
+            </div>
+            <h1 id="baixee">Baixe nosso aplicativo</h1>
+            <img src="images/baixe.png" id="baixe1">
+            <img src="images/baixe2.png" id="baixe2">
+        </div>
+    </footer>
+    <!--Fim footer-->
 
 </body>
 

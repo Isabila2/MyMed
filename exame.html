@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="exame.css">
-    <title>Exames.Med+</title>
+    <title>Exames-Med+</title>
 </head>
 <!--Script-->
 
@@ -20,15 +20,78 @@
     }
 
     // Função para abrir a sub-tela
+    function abrirSubTelaum() {
+        document.getElementById("subTelaum").style.display = "block";
+    }
+
+    function apenasse() {
+                    event.preventDefault();
+                    var cpf = document.getElementById('cpf');
+                    var abc = (cpf).value;
+
+            
+                    if (abc == "") {
+                        window.alert("Digite seu CPF");
+                    } if (abc != "") {
+                        return validarCPF(cpf);
+                    }
+                }
+
+
+                function validarCPF(cpf) {
+                    var cpf = document.getElementById('cpf');
+                    var abc = (cpf).value;
+
+          if (abc.length !== 11) {
+            window.alert("CPF inválido");
+            return false;
+          }
+
+          if (/^(\d)\1+$/.test(cpf)) {
+            window.alert("CPF inválido");
+            return false;
+          }
+
+          let soma = 0;
+          for (let i = 0; i < 9; i++) {
+            soma += parseInt(abc.charAt(i)) * (10 - i);
+          }
+          let resto = soma % 11;
+          let digito1 = resto < 2 ? 0 : 11 - resto;
+
+          if (digito1 !== parseInt(abc.charAt(9))) {
+            window.alert("CPF inválido");
+            return false;
+          }
+
+          soma = 0;
+          for (let i = 0; i < 10; i++) {
+            soma += parseInt(abc.charAt(i)) * (11 - i);
+          }
+          resto = soma % 11;
+          let digito2 = resto < 2 ? 0 : 11 - resto;
+
+          if (digito2 !== parseInt(abc.charAt(10))) {
+            window.alert("CPF inválido");
+            return false;
+          }
+          window.alert("CPF encontrado!");
+          return abrirSubTela();
+        }
+
+         
     function abrirSubTela() {
         document.getElementById("subTela").style.display = "block";
     }
-
     // Função para fechar a sub-tela
-    function fecharSubTela() {
-        document.getElementById("subTela").style.display = "none";
+    function fecharSubTelaum() {
+        document.getElementById("subTelaum").style.display = "none";
     }
 
+    function fecharSubTela() {
+        document.getElementById("subTela").style.display = "none";
+        document.getElementById("subTelaum").style.display = "none";
+    }
     // Função para verificar a resposta
     function verificarResposta() {
         var resposta = document.querySelector('input[name="resposta"]:checked');
@@ -51,6 +114,7 @@
     function OpenPopUp() {
         window.open('usuariolog.html', 'popup', 'width=459,height=570');
     }
+
 </script>
 
 <!--Fim script-->
@@ -149,6 +213,14 @@
         border-radius: 5px;
     }
 
+    #cpf{
+        background-color: #eceeef;
+        border: 1px solid #a8a8a9;
+        width: 380px;
+        height: 29px;
+        border-radius: 5px;
+    }
+
     #tela {
         background-color: #eceeef;
         border: 1px solid #a8a8a9;
@@ -176,6 +248,33 @@
     </header>
     <!--Fim header-->
 
+     <!-- Sub-telaum -->
+
+     <div id="subTelaum" class="sub-tela">
+        <div class="sub-tela-conteudo">
+            <div style="color: #000000;">
+                <h1>Para agendar o exame, digite seu CPF.</h1>
+                <a href="planos.html"><h3 id="caso">Caso não for cliente, escolha o plano desejado e faça parte da MED+.</h3></a>
+            </div>
+        
+            <div style="align-items: flex-start;">
+            
+                <br>
+                <label> </label>
+                <input id="cpf" name="tel" value="" placeholder="CPF:123-456-789-12">
+                <br>
+
+                <br>
+
+            </div>
+            
+
+            <button onclick="apenasse()" class="buttone">Confirmar</button>
+            <button onclick="fecharSubTelaum()" class="buttone">Fechar</button>
+        </div>
+    </div>
+
+    <!--Fim subtelaum-->
     <!-- Sub-tela -->
 
     <div id="subTela" class="sub-tela">
@@ -243,22 +342,22 @@
     <div class="quadradao">
         <div class="Quadrado1">
 
-            <div class="Bloco1" onclick="abrirSubTela()">
+            <div class="Bloco1" onclick="abrirSubTelaum()">
                 <h3 class="texto"> Hemograma completo
                 </h3>
             </div>
 
-            <div class="Bloco2" onclick="abrirSubTela()">
+            <div class="Bloco2" onclick="abrirSubTelaum()">
                 <h1 class="texto"> Radiografia de tórax
                 </h1>
             </div>
 
-            <div class="Bloco3" onclick="abrirSubTela()">
+            <div class="Bloco3" onclick="abrirSubTelaum()">
                 <h1 class="texto"> Ultrassonografia abdominal
                 </h1>
             </div>
 
-            <div class="Bloco4" onclick="abrirSubTela()">
+            <div class="Bloco4" onclick="abrirSubTelaum()">
                 <h1 class="texto"> Eletrocardiograma (ECG)
                 </h1>
             </div>
@@ -267,22 +366,22 @@
 
         <div id="Quadrado2">
 
-            <div class="Bloco5" onclick="abrirSubTela()">
+            <div class="Bloco5" onclick="abrirSubTelaum()">
                 <h3 class="texto"> Colonoscopia
                 </h3>
             </div>
 
-            <div class="Bloco6" onclick="abrirSubTela()">
+            <div class="Bloco6" onclick="abrirSubTelaum()">
                 <h1 class="texto"> Endoscopia digestiva alta
                 </h1>
             </div>
 
-            <div class="Bloco7" onclick="abrirSubTela()">
+            <div class="Bloco7" onclick="abrirSubTelaum()">
                 <h1 class="texto"> Ressonância magnética (RM)
                 </h1>
             </div>
 
-            <div class="Bloco8" onclick="abrirSubTela()">
+            <div class="Bloco8" onclick="abrirSubTelaum()">
                 <h1 class="texto"> Tomografia computadorizada (TC)
 
                 </h1>
@@ -292,22 +391,22 @@
 
         <div id="quadrado3">
 
-            <div class="Bloco9" onclick="abrirSubTela()">
+            <div class="Bloco9" onclick="abrirSubTelaum()">
                 <h3 class="texto"> Mamografia
                 </h3>
             </div>
 
-            <div class="Bloco10" onclick="abrirSubTela()">
+            <div class="Bloco10" onclick="abrirSubTelaum()">
                 <h1 class="texto"> Exame de urina completo
                 </h1>
             </div>
 
-            <div class="Bloco11" onclick="abrirSubTela()">
+            <div class="Bloco11" onclick="abrirSubTelaum()">
                 <h1 class="texto"> Exame toxicológico
                 </h1>
             </div>
 
-            <div class="Bloco12" onclick="abrirSubTela()">
+            <div class="Bloco12" onclick="abrirSubTelaum()">
                 <h1 class="texto"> Teste de audiometria
                 </h1>
             </div>
@@ -316,6 +415,27 @@
 
 
     </div>
+
+       <!--Footer-->
+       <footer>
+        <div class="final">
+
+            <h1 id="finale">Central de Atendimentos MED+</h1>
+            <h2 id="finale2">(19)99378-4877 - Sumaré</h2>
+            <h2 id="finale2">(19)99439-2278 - Nova Odessa</h2>
+
+            <h2 id="direitos">© 2023 Clínica MED+. Todos os Direitos Reservados.</h2>
+            <div class="redesocial">
+                <h1 id="siga">Siga nossas redes sociais</h1>
+                <h2 id="redes">Instagram</h2>
+                <h2 id="redes">Facebook</h2>
+            </div>
+            <h1 id="baixee">Baixe nosso aplicativo</h1>
+            <img src="images/baixe.png" id="baixe1">
+            <img src="images/baixe2.png" id="baixe2">
+        </div>
+    </footer>
+    <!--Fim footer-->
 
 </body>
 
