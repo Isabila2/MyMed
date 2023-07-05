@@ -312,8 +312,8 @@ footer {
     background-image: url(images/imgfooter.png);
     background-size: cover;
     width: 100%;
-    height: 602px;
-    margin-top: 10px;
+    height: 400px;
+    margin-top: 100px;
   }
   
   .letrasfinais {
@@ -322,13 +322,13 @@ footer {
   
   #direitos {
     color: #ffffff;
-    margin-top: 430px;
+    margin-top: 230px;
   }
   
   #siga {
     color: #ffffff;
     margin-left: 1440px;
-    margin-top: -600px;
+    margin-top: -390px;
   }
   
   #siga:hover {
@@ -355,14 +355,14 @@ footer {
     color: #ffffff;
     font-size: 30px;
     font-family: Mate SC;
-    margin-top: 50px;
+    margin-top: 40px;
   }
   
   #finale2 {
     color: #ffffff;
     font-size: 30px;
     font-family: Mate SC;
-    margin-top: 0px;
+    margin-top: 5px;
   }
   
   #finale2:hover {
@@ -382,7 +382,7 @@ footer {
   #baixee {
     color: #ffffff;
     margin-left: 1440px;
-    margin-top: 0px;
+    margin-top: -0px;
   }
   
   #baixee:hover {
