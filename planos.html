@@ -13,6 +13,95 @@
 
 <body>
 
+    <script>
+        function PlanoUm(){
+            document.getElementById("subTelaum").style.display = "block";
+        }
+
+        function fecharSubTelaum() {
+        document.getElementById("subTelaum").style.display = "none";
+    }
+
+function assinar(){
+    document.getElementById("compra1").style.display = "block";
+}
+   </script>
+
+
+ <div id="subTelaum" class="sub-tela">
+    <div class="sub-tela-conteudo">
+        <div style="color: #93D1FF;">
+       <h1>PLANO MED+ VIDA</h1>
+        </div>
+        <div>
+        <p class="texto1"> Versão mensal à partir de R$120,00</p>
+        <button onclick="assinar()" class="assinar">Assinar</button>
+</div>
+<div>
+    <p class="texto1"> Versão anual à partir de R$1.440,00</p>
+    <button onclick="assinar()" class="assinar">Assinar</button>
+</div>
+<br>
+        
+        <button onclick="fecharSubTelaum()" class="buttones">Fechar</button>
+    </div>
+</div>
+
+
+<div id="compra1" class="sub-tela">
+    <div class="sub-tela-conteudo">
+        <div style="color: #000000;">
+            <h2>Preencha as informações necessárias para o agendamento do seu exame</h2>
+        </div>
+        <br>
+        <div style="align-items: flex-start;">
+            <label></label>
+            <input id="tel" name="tel" value="" placeholder="NOME">
+            <br>
+
+            <br>
+            <label></label>
+            <input id="tel" name="tel" value="" placeholder="CEP: 12345-678">
+            <br>
+
+
+            <br>
+            <label></label>
+            <input id="tel" name="tel" value="" placeholder="NUMERO">
+            <br>
+
+
+
+            <br>
+            <label> </label>
+            <input id="tel" name="tel" value="" placeholder="CPF:123-456-789-12">
+            <br>
+
+            <br>
+            <label> </label>
+            <select id="tela" name="tel" value="">
+                <option value="NotreDame">NotreDame</option>
+                <option value="Bradesco Saúde">Bradesco Saúde</option>
+                <option value="Unimed">Unimed</option>
+            </select>
+
+
+        </div>
+        <br>
+        <label>
+            <input type="radio" name="resposta" value="sim"> Sim
+        </label>
+        <label>
+            <input type="radio" name="resposta" value="nao"> Não
+        </label>
+        <br>
+        <br>
+
+        <button onclick="verificarResposta()" class="buttone">Confirmar</button>
+        <button onclick="fecharSubTela()" class="buttone">Fechar</button>
+    </div>
+</div>
+
     <!--Header-->
     <header>
 
@@ -32,73 +121,19 @@
 
     <!--Corpo-->
     <main>
-        <div class="Blocos">
-            <div class="Bloco1">
-                <img src="images/Imagem2.png" height="150px" id="imagens" />
-                
-                <h1>
-                    Plano Familiar
-                    <br>
-                    <br>
-                    <br>
-                    Valor mensal: R$250
-                    <br>
-                    <br>
-                    <br>
-                    Franquia anual: R$500
-                    <br>
-                    <br>
-                    <br>
-                    Co-pagamento por consulta: R$30
-                </h1>
-
-            </div>
-
-            <div class="Bloco2">
-                <img src="images/Imagem.png" height="150px" id="imagens2"/>
-
-                <h1>
-
-                    Plano Individual
-                    <br>
-                    <br>
-                    <br>
-                    Valor mensal: R$450
-                    <br>
-                    <br>
-                    <br>
-                    Franquia anual: R$800
-                    <br>
-                    <br>
-                    <br>
-                    Co-pagamento por consulta: R$20
-
-                </h1>
-
-            </div>
-
-            <div class="Bloco3">
-                <img src="images/Imagem3.png" height="150px" id="imagens3" />
-                <h1>
-
-                    Plano Empresarial
-                    <br>
-                    <br>
-                    <br>
-                    Valor mensal: R$450
-                    <br>
-                    <br>
-                    <br>
-                    Franquia anual: R$800
-                    <br>
-                    <br>
-                    <br>
-                    Co-pagamento por consulta: R$20
-
-                </h1>
-            </div>
-        </div>
+      <div class="meio">
+        <p id="planos">PLANOS MED+</p>
+      </div>
     </main>
+    <div class="pla1">
+        <img src="images/plano1.png" id="plan1">
+        <p class="titu1">MED+ VIDA</p>
+     <P class="text1">Plano individual</P>
+   
+    <button onclick="PlanoUm()" class="buttone">Assinar Plano</button>
+    </div>
+
+
 
     <!--Fim corpo-->
 

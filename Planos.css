@@ -88,82 +88,185 @@ header {
 /*Corpo*/
 main {
     margin-top: 100px;
+    background-color: #93D1FF;
+    height: 140px;
+
 }
 
-.Bloco1 {
-    border: 3px solid #93D1FF;
-    border-radius: 15px 15px 15px 15px;
-    width: 350px;
-    height: 680px;
-    text-align: center;
-    margin-top: 5px;
-    text-align: center;
-    align-content: center;
-    position: absolute;
-    left: 680px;
+#planos{
+    color: #ffffff;
+   margin-left: 570px;
+   font-size: 100px;
+   margin-top: 100px;
+}
+ 
+#plan1{
+    margin-top: 80px;
+}
+#plan1:hover{
+    transform: scale(0.9);
+    transition: all 1.0s;
 }
 
-.Bloco2 {
-    border: 1px solid #93D1FF;
-    border-radius: 15px 15px 15px 15px;
-    width: 350px;
-    height: 680px;
-    text-align: center;
-    margin-top: 5px;
-    text-align: center;
-    align-content: center;
-    position: absolute;
-    left: 45PX;
+.titu1{
+    color: #93D1FF;
+    font-size: 90px;
+    margin-left: 800px;
+    margin-top: -460px;
+    font-weight: 700;
 }
 
-.Bloco3 {
-    border: 1px solid #93D1FF;
-    border-radius: 15px 15px 15px 15px;
-    width: 350px;
-    height: 680px;
-    text-align: center;
-    margin-top: 5px;
-    text-align: center;
-    align-content: center;
-    position: absolute;
-    left: 1300PX;
+.text1{
+    color: #93D1FF;
+    font-size: 50px;
+    margin-left: 800px;
+    margin-top: -80px;
 }
 
-.Blocos {
-    position: absolute;
-    margin-left: 78px;
-}
+    .textt1{
+        font-size: 20px;
+        margin-left: 805px;
+        margin-top: -50px;
+    }
 
-#imagens {
-    width: 240px;
-    height: 170px;
-}
+    .buttone{
+        background-color: #93D1FF;
+        border-radius: 15px;
+        margin-left: 900px;
+        margin-top: px;
+        height: 50px;
+        width: 200px;
+        border: 1px solid #93D1FF;
+        color: #ffffff;
+        font-size: 20px;
+    }
 
-#imagens2 {
-    width: 240px;
-    height: 190px;
-    margin-top: -10px;
-}
-
-#imagens3 {
-    width: 240px;
-    height: 160px;
-    margin-top: 0px;
-}
-
-#imagens:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
-}
-
-#imagens2:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
-}
-
-#imagens3:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
-}
+    .buttone:hover{
+        transform: scale(1.1);
+        transition: all 0.7s;
+        background-color: #93D1FF;
+        box-shadow: 5px 5px #4b93ca;
+    }
 
 /*Fim corpo*/
+/*Subtela*/
+
+.sub-tela {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff(0, 0, 0, 0.5);
+    /* Fundo semi-transparente */
+    z-index: 9999;
+    /* Nível de sobreposição para aparecer acima do conteúdo principal */
+    display: none;
+    /* Inicialmente oculta */
+}
+
+.sub-tela-conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    width: 600px;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #ffffff(0, 0, 0, 0.3);
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.sub-tela-titulo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sub-tela-pergunta {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sub-tela-opcoes {
+    display: flex;
+    justify-content: center;
+    background-color: #a09d9d;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sub-tela-opcoes label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.sub-tela-botoes {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#tel {
+    background-color: #eceeef;
+    border: 1px solid #a8a8a9;
+    width: 380px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+#cpf{
+    background-color: #eceeef;
+    border: 1px solid #a8a8a9;
+    width: 380px;
+    height: 29px;
+    border-radius: 5px;
+}
+
+#tela {
+    background-color: #eceeef;
+    border: 1px solid #a8a8a9;
+}
+
+.buttones {
+    padding: 15px 25px;
+    background-color: #fdfdfd;
+    color: #0a0a0a;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 130px;
+}
+
+.buttones:hover {
+    background-color: #93D1FF;
+}
+
+.texto1{
+    font-size: 25px;
+  
+}
+
+.assinar{
+    background-color: #93D1FF;
+    border-radius: 15px;
+
+    height: 50px;
+    width: 200px;
+    border: 1px solid #93D1FF;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.assinar:hover{
+    transform: scale(1.1);
+    transition: all 0.7s;
+    background-color: #93D1FF;
+    box-shadow: 5px 5px #4b93ca;
+}
+
+/*Fim subtela*/
