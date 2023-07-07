@@ -18,13 +18,57 @@
             document.getElementById("subTelaum").style.display = "block";
         }
 
+        function PlanoDois(){
+            document.getElementById("subTeladois").style.display = "block";
+        }
+
+
         function fecharSubTelaum() {
         document.getElementById("subTelaum").style.display = "none";
+    }
+
+    function fecharSubTeladoiss() {
+        document.getElementById("subTeladois").style.display = "none";
     }
 
 function assinar(){
     document.getElementById("compra1").style.display = "block";
 }
+
+function assinarr(){
+    document.getElementById("compra2").style.display = "block";
+}
+
+
+function fecharSubTela() {
+        document.getElementById("compra1").style.display = "none";
+        document.getElementById("subTelaum").style.display = "none";
+    }
+
+    function fecharSubTeladois() {
+        document.getElementById("compra2").style.display = "none";
+        document.getElementById("subTeladois").style.display = "none";
+    }
+    // Função para verificar a resposta
+    function verificarResposta() {
+        event.preventDefault();
+        var tel = document.getElementById('tel');
+        var abc = (tel).value;
+
+        var tela = document.getElementById('tela');
+        var def = (tela).value;
+
+        if (abc == "") {
+                        window.alert("Complete os dados necessários!");
+                    } if (def == "") {
+                        window.alert("Complete os dados necessários!");
+                    } if (abc != "" && def != "") {
+                        window.alert("Dados BaNcArIoOoOsSsS!!!");
+                    }
+    }
+
+
+
    </script>
 
 
@@ -51,56 +95,123 @@ function assinar(){
 <div id="compra1" class="sub-tela">
     <div class="sub-tela-conteudo">
         <div style="color: #000000;">
-            <h2>Preencha as informações necessárias para o agendamento do seu exame</h2>
+            <h2>Preencha as informações necessárias para a solicitação do plano.</h2>
         </div>
         <br>
         <div style="align-items: flex-start;">
             <label></label>
-            <input id="tel" name="tel" value="" placeholder="NOME">
+            <input  id="tel" name="tel" value="" required="required" placeholder="Digite seu nome">
             <br>
 
             <br>
             <label></label>
-            <input id="tel" name="tel" value="" placeholder="CEP: 12345-678">
+            <input    id="tel" name="tel" value="" required="required" placeholder="Digite seu CPF">
             <br>
 
 
             <br>
             <label></label>
-            <input id="tel" name="tel" value="" placeholder="NUMERO">
+            <input type="email"  id="tel" name="tel" required="required" value="" placeholder="Digite seu e-mail">
             <br>
 
-
-
-            <br>
-            <label> </label>
-            <input id="tel" name="tel" value="" placeholder="CPF:123-456-789-12">
-            <br>
-
+            
             <br>
             <label> </label>
-            <select id="tela" name="tel" value="">
-                <option value="NotreDame">NotreDame</option>
-                <option value="Bradesco Saúde">Bradesco Saúde</option>
-                <option value="Unimed">Unimed</option>
+            <input   id="tel" name="tel" value="" required="required" placeholder="Telefone com DDD">
+            <br>
+
+        
+            <br>
+            <label>Estado</label>
+            <select id="tela" name="tel" value="" required="required" >
+            
+                <option id="ac">Acre</option>
+                <option id="al">Alagoas</option>
+                <option id="ap">Amapá</option>
+                <option id="am">Amazonas</option>
+                <option id="ba">Bahia</option>
+                <option id="ce">Ceará</option>
+                <option id="es">Espírito Santo</option>
+                  <option id="go">Goiás</option>
+                <option id="ma">Maranhão</option>
+                <option id="mt">Mato Grosso</option>
+                <option id="ms">Mato Grosso do Sul</option>
+                <option id="mg">Minas Gerais</option>
+                <option id="pa">Pará</option>
+                <option id="pb">Paraíba</option>
+                  <option id="pr">Paraná</option>
+                <option id="pe">Pernambuco</option>
+                <option id="pi">Piauí</option>
+                <option id="rj">Rio de Janeiro</option>
+                <option id="rn">Rio Grande do Norte</option>
+                <option id="rs">Rio Grande do Sul</option>
+                <option id="ro">Rondônia</option>
+                  <option id="rr">Roraima</option>
+                <option id="sc">Santa Catarina</option>
+                <option id="sp">São Paulo</option>
+                <option id="se">Sergipe</option>
+                <option id="to">Tocantins</option>
+                <option id="df">Distrito Federal</option>
+            
             </select>
 
+            <br>
+            
+    
+            <br>
+            <label>Selecione a faixa etária</label>
+            <select id="tela" name="tel" value="" required="required" >
+              
+                <option>0 a 18 anos</option>
+                <option>19 a 23 anos</option>
+                <option>24 a 28 anos</option>
+                <option>29 a 33 anos</option>
+                <option>34 a 28 anos</option>
+                <option>39 a 43 anos</option>
+                <option>44 a 48 anos</option>
+                <option>49 a 53 anos</option>
+                <option>54 a 58 anos</option>
+                <option>59 +</option>
 
+            </select>
+
+        
         </div>
         <br>
-        <label>
-            <input type="radio" name="resposta" value="sim"> Sim
-        </label>
-        <label>
-            <input type="radio" name="resposta" value="nao"> Não
-        </label>
+   
         <br>
         <br>
 
-        <button onclick="verificarResposta()" class="buttone">Confirmar</button>
-        <button onclick="fecharSubTela()" class="buttone">Fechar</button>
+        <button onclick="verificarResposta()" class="buttones">Confirmar</button>
+        <button onclick="fecharSubTela()" class="buttones">Fechar</button>
     </div>
 </div>
+
+
+<div id="subTeladois" class="sub-tela">
+    <div class="sub-tela-conteudo">
+        <div style="color: #93D1FF;">
+       <h1>PLANO MED+ FAMÍLIA</h1>
+        </div>
+        <div>
+        <p class="texto1"> Versão mensal à partir de R$210,00</p>
+        <button onclick="assinar()" class="assinar">Assinar</button>
+</div>
+<div>
+    <p class="texto1"> Versão anual à partir de R$2.300,00</p>
+    <button onclick="assinar()" class="assinar">Assinar</button>
+</div>
+<br>
+        
+        <button onclick="fecharSubTeladoiss()" class="buttones">Fechar</button>
+    </div>
+</div>
+
+
+
+
+
+
 
     <!--Header-->
     <header>
@@ -124,14 +235,32 @@ function assinar(){
       <div class="meio">
         <p id="planos">PLANOS MED+</p>
       </div>
-    </main>
+   
     <div class="pla1">
         <img src="images/plano1.png" id="plan1">
         <p class="titu1">MED+ VIDA</p>
      <P class="text1">Plano individual</P>
    
     <button onclick="PlanoUm()" class="buttone">Assinar Plano</button>
-    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="pla1">
+        <img src="images/plano1.png" id="plan1">
+        <p class="titu1">MED+ FAMÍLIA</p>
+     <P class="text1">Plano familiar</P>
+   
+    <button onclick="PlanoDois()" class="buttone">Assinar Plano</button>
+
+    </main>
+    
 
 
 

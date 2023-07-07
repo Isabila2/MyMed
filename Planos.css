@@ -230,6 +230,9 @@ main {
 #tela {
     background-color: #eceeef;
     border: 1px solid #a8a8a9;
+    width: 200px;
+    color: #8d8d8d;
+    border-radius: 5px;
 }
 
 .buttones {
@@ -268,5 +271,6 @@ main {
     background-color: #93D1FF;
     box-shadow: 5px 5px #4b93ca;
 }
+
 
 /*Fim subtela*/
