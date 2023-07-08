@@ -296,35 +296,56 @@
 
                 <br>
                 <label></label>
-                <input id="tel" name="tel" value="" placeholder="NUMERO">
+                <input id="tel" name="tel" value="" placeholder="TELEFONE COM DDD">
                 <br>
-
-
-
                 <br>
-                <label> </label>
-                <input id="tel" name="tel" value="" placeholder="CPF:123-456-789-12">
-                <br>
+                <label>Data</label>
+                <input type="date" id="tela">
 
-                <br>
-                <label> </label>
-                <select id="tela" name="tel" value="">
-                    <option value="NotreDame">NotreDame</option>
-                    <option value="Bradesco Saúde">Bradesco Saúde</option>
-                    <option value="Unimed">Unimed</option>
-                </select>
 
+<br>
+<br>
+<label>Estado</label>
+<select id="tela" name="tel" value="" required="required" >
+
+    <option id="ac">Acre</option>
+    <option id="al">Alagoas</option>
+    <option id="ap">Amapá</option>
+    <option id="am">Amazonas</option>
+    <option id="ba">Bahia</option>
+    <option id="ce">Ceará</option>
+    <option id="es">Espírito Santo</option>
+      <option id="go">Goiás</option>
+    <option id="ma">Maranhão</option>
+    <option id="mt">Mato Grosso</option>
+    <option id="ms">Mato Grosso do Sul</option>
+    <option id="mg">Minas Gerais</option>
+    <option id="pa">Pará</option>
+    <option id="pb">Paraíba</option>
+      <option id="pr">Paraná</option>
+    <option id="pe">Pernambuco</option>
+    <option id="pi">Piauí</option>
+    <option id="rj">Rio de Janeiro</option>
+    <option id="rn">Rio Grande do Norte</option>
+    <option id="rs">Rio Grande do Sul</option>
+    <option id="ro">Rondônia</option>
+      <option id="rr">Roraima</option>
+    <option id="sc">Santa Catarina</option>
+    <option id="sp">São Paulo</option>
+    <option id="se">Sergipe</option>
+    <option id="to">Tocantins</option>
+    <option id="df">Distrito Federal</option>
+
+</select>
+
+
+          
 
             </div>
-            <br>
-            <label>
-                <input type="radio" name="resposta" value="sim"> Sim
-            </label>
-            <label>
-                <input type="radio" name="resposta" value="nao"> Não
-            </label>
-            <br>
-            <br>
+          
+<br>
+
+            
 
             <button onclick="verificarResposta()" class="buttone">Confirmar</button>
             <button onclick="fecharSubTela()" class="buttone">Fechar</button>

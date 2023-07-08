@@ -102,12 +102,35 @@ main {
  
 #plan1{
     margin-top: 80px;
+
 }
 #plan1:hover{
     transform: scale(0.9);
     transition: all 1.0s;
 }
 
+
+ 
+#plan2{
+    margin-top: 80px;
+    margin-left: 10px;
+    width: 720px;
+}
+#plan2:hover{
+    transform: scale(0.9);
+    transition: all 1.0s;
+}
+
+#plan3{
+    margin-top: 80px;
+    margin-left: -20px;
+    width: 720px;
+    
+}
+#plan3:hover{
+    transform: scale(0.9);
+    transition: all 1.0s;
+}
 .titu1{
     color: #93D1FF;
     font-size: 90px;
@@ -118,6 +141,37 @@ main {
 
 .text1{
     color: #93D1FF;
+    font-size: 50px;
+    margin-left: 800px;
+    margin-top: -80px;
+}
+
+.titu2{
+    color: #21638C;
+    font-size: 90px;
+    margin-left: 800px;
+    margin-top: -460px;
+    font-weight: 700;
+}
+
+.text2{
+    color: #0D2E46;
+    font-size: 50px;
+    margin-left: 800px;
+    margin-top: -80px;
+}
+
+
+.titu3{
+    color: #0D2E46;
+    font-size: 90px;
+    margin-left: 800px;
+    margin-top: -460px;
+    font-weight: 700;
+}
+
+.text3{
+    color: #0D2E46;
     font-size: 50px;
     margin-left: 800px;
     margin-top: -80px;
@@ -141,6 +195,32 @@ main {
         font-size: 20px;
     }
 
+    
+    .buttonedois{
+        background-color: #21638C;
+        border-radius: 15px;
+        margin-left: 900px;
+        margin-top: px;
+        height: 50px;
+        width: 200px;
+        border: 1px solid #21638C;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    .buttonetres{
+        background-color: #0D2E46;
+        border-radius: 15px;
+        margin-left: 900px;
+        margin-top: px;
+        height: 50px;
+        width: 200px;
+        border: 1px solid #21638C;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+
     .buttone:hover{
         transform: scale(1.1);
         transition: all 0.7s;
@@ -148,6 +228,20 @@ main {
         box-shadow: 5px 5px #4b93ca;
     }
 
+    
+    .buttonedois:hover{
+        transform: scale(1.1);
+        transition: all 0.7s;
+        background-color: #21638C;
+        box-shadow: 5px 5px #0D2E46;
+    }
+
+    .buttonetres:hover{
+        transform: scale(1.1);
+        transition: all 0.7s;
+        background-color: #0D2E46;
+        box-shadow: 5px 5px #93D1FF;
+    }
 /*Fim corpo*/
 /*Subtela*/
 
@@ -228,6 +322,22 @@ main {
 }
 
 #tela {
+    background-color: #eceeef;
+    border: 1px solid #a8a8a9;
+    width: 200px;
+    color: #8d8d8d;
+    border-radius: 5px;
+}
+
+
+#telaa {
+    background-color: #eceeef;
+    border: 1px solid #a8a8a9;
+    width: 200px;
+    color: #8d8d8d;
+    border-radius: 5px;
+}
+#tell {
     background-color: #eceeef;
     border: 1px solid #a8a8a9;
     width: 200px;
