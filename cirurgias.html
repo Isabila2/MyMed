@@ -33,7 +33,7 @@
 
     <div class="imagem"><img src="images/cirurgia.png" id="imagem">
         <form class="botao">
-            <p id="titulo">Cirurgias</p>
+           
 
             <div class="label"><label id="labell">Escolha uma especialidade</label></div>
             <select name="linguagem" required="required" id="cirurgias">
@@ -133,6 +133,7 @@
                             alert("Por favor, ligue para a central de atendimentos MED+ para confirmar a sua " + abc + " com o(a) médico(a) " + def + "!");
 
                         } else if (resposta.value === "nao") {
+                            alert("Faça os exames antes de marcar uma cirurgia!")
 
                             fecharSubTela();
                         }
@@ -152,6 +153,10 @@
                     window.location.href = "usuariolog.html";
 
                 }
+
+                function OpenPopUp() {
+            window.open('usuariolog.html', 'popup', 'width=459,height=570');
+        }
             </script>
             <!--Fim script-->
         </form>
